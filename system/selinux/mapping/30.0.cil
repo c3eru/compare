@@ -1,13 +1,4 @@
-;; types removed from current policy
 (type cgroup_bpf)
-(type exported_audio_prop)
-(type exported_dalvik_prop)
-(type exported_ffs_prop)
-(type exported_fingerprint_prop)
-(type exported_system_radio_prop)
-(type exported_radio_prop)
-(type exported_vold_prop)
-(type exported_wifi_prop)
 (type exported2_config_prop)
 (type exported2_default_prop)
 (type exported2_radio_prop)
@@ -15,12 +6,18 @@
 (type exported2_vold_prop)
 (type exported3_default_prop)
 (type exported3_radio_prop)
+(type exported_audio_prop)
+(type exported_dalvik_prop)
+(type exported_ffs_prop)
+(type exported_fingerprint_prop)
+(type exported_radio_prop)
+(type exported_system_radio_prop)
+(type exported_vold_prop)
+(type exported_wifi_prop)
 (type ffs_prop)
 (type system_radio_prop)
 (type thermalcallback_hwservice)
-
 (typeattribute binder_in_vendor_violators)
-
 (expandtypeattribute (DockObserver_service_30_0) true)
 (expandtypeattribute (IProxyService_service_30_0) true)
 (expandtypeattribute (accessibility_service_30_0) true)
@@ -1288,8 +1285,7 @@
 (typeattributeset debugfs_mmc_30_0 (debugfs_mmc))
 (typeattributeset debugfs_trace_marker_30_0 (debugfs_trace_marker))
 (typeattributeset debugfs_tracing_30_0 (debugfs_tracing))
-(typeattributeset debugfs_tracing_debug_30_0 (debugfs_tracing_debug
-                                              debugfs_tracing_printk_formats))
+(typeattributeset debugfs_tracing_debug_30_0 (debugfs_tracing_debug debugfs_tracing_printk_formats))
 (typeattributeset debugfs_tracing_instances_30_0 (debugfs_tracing_instances))
 (typeattributeset debugfs_wakeup_sources_30_0 (debugfs_wakeup_sources))
 (typeattributeset debugfs_wifi_tracing_30_0 (debugfs_wifi_tracing))
@@ -1297,17 +1293,7 @@
 (typeattributeset default_android_hwservice_30_0 (default_android_hwservice))
 (typeattributeset default_android_service_30_0 (default_android_service))
 (typeattributeset default_android_vndservice_30_0 (default_android_vndservice))
-(typeattributeset default_prop_30_0 (
-    default_prop
-    audio_config_prop
-    build_config_prop
-    suspend_prop
-    init_service_status_private_prop
-    setupwizard_prop
-    sqlite_log_prop
-    verity_status_prop
-    zygote_wrap_prop
-))
+(typeattributeset default_prop_30_0 (audio_config_prop build_config_prop default_prop init_service_status_private_prop setupwizard_prop sqlite_log_prop suspend_prop verity_status_prop zygote_wrap_prop))
 (typeattributeset dev_cpu_variant_30_0 (dev_cpu_variant))
 (typeattributeset device_30_0 (device))
 (typeattributeset device_config_activity_manager_native_boot_prop_30_0 (device_config_activity_manager_native_boot_prop))
@@ -1363,82 +1349,28 @@
 (typeattributeset ethernet_service_30_0 (ethernet_service))
 (typeattributeset exfat_30_0 (exfat))
 (typeattributeset exported2_config_prop_30_0 (exported2_config_prop systemsound_config_prop))
-(typeattributeset exported2_default_prop_30_0
-  ( exported2_default_prop
-    aac_drc_prop
-    bootloader_prop
-    build_prop
-    hal_instrumentation_prop
-    init_service_status_prop
-    libc_debug_prop
-    property_service_version_prop))
+(typeattributeset exported2_default_prop_30_0 (aac_drc_prop bootloader_prop build_prop exported2_default_prop hal_instrumentation_prop init_service_status_prop libc_debug_prop property_service_version_prop))
 (typeattributeset exported2_radio_prop_30_0 (exported2_radio_prop))
-(typeattributeset exported2_system_prop_30_0
-  ( exported2_system_prop
-    dalvik_runtime_prop
-    surfaceflinger_color_prop
-    zram_control_prop))
-(typeattributeset exported2_vold_prop_30_0
-  ( exported2_vold_prop
-    vold_config_prop
-    vold_post_fs_data_prop))
-(typeattributeset exported3_default_prop_30_0
-  ( exported3_default_prop
-    camera_calibration_prop
-    camera_config_prop
-    charger_config_prop
-    drm_service_config_prop
-    hdmi_config_prop
-    keyguard_config_prop
-    lmkd_config_prop
-    media_config_prop
-    mediadrm_config_prop
-    oem_unlock_prop
-    packagemanager_config_prop
-    recovery_config_prop
-    sendbug_config_prop
-    storagemanager_config_prop
-    telephony_config_prop
-    tombstone_config_prop
-    vts_status_prop
-    wifi_config_prop
-    zram_config_prop))
+(typeattributeset exported2_system_prop_30_0 (dalvik_runtime_prop exported2_system_prop surfaceflinger_color_prop zram_control_prop))
+(typeattributeset exported2_vold_prop_30_0 (exported2_vold_prop vold_config_prop vold_post_fs_data_prop))
+(typeattributeset exported3_default_prop_30_0 (camera_calibration_prop camera_config_prop charger_config_prop drm_service_config_prop exported3_default_prop hdmi_config_prop keyguard_config_prop lmkd_config_prop media_config_prop mediadrm_config_prop oem_unlock_prop packagemanager_config_prop recovery_config_prop sendbug_config_prop storagemanager_config_prop telephony_config_prop tombstone_config_prop vts_status_prop wifi_config_prop zram_config_prop))
 (typeattributeset exported3_radio_prop_30_0 (exported3_radio_prop radio_control_prop))
-(typeattributeset exported3_system_prop_30_0
-  ( exported3_system_prop
-    boot_status_prop
-    provisioned_prop
-    retaildemo_prop))
-(typeattributeset exported_audio_prop_30_0 (exported_audio_prop audio_config_prop))
+(typeattributeset exported3_system_prop_30_0 (boot_status_prop exported3_system_prop provisioned_prop retaildemo_prop))
+(typeattributeset exported_audio_prop_30_0 (audio_config_prop exported_audio_prop))
 (typeattributeset exported_bluetooth_prop_30_0 (exported_bluetooth_prop))
 (typeattributeset exported_camera_prop_30_0 (exported_camera_prop))
 (typeattributeset exported_config_prop_30_0 (exported_config_prop))
-(typeattributeset exported_dalvik_prop_30_0 (exported_dalvik_prop dalvik_config_prop))
-(typeattributeset exported_default_prop_30_0
-  ( exported_default_prop
-    aaudio_config_prop
-    build_bootimage_prop
-    build_odm_prop
-    build_vendor_prop
-    surfaceflinger_prop
-    vts_config_prop))
+(typeattributeset exported_dalvik_prop_30_0 (dalvik_config_prop exported_dalvik_prop))
+(typeattributeset exported_default_prop_30_0 (aaudio_config_prop build_bootimage_prop build_odm_prop build_vendor_prop exported_default_prop surfaceflinger_prop vts_config_prop))
 (typeattributeset exported_dumpstate_prop_30_0 (exported_dumpstate_prop))
-(typeattributeset exported_ffs_prop_30_0
-  ( exported_ffs_prop
-    ffs_config_prop
-    ffs_control_prop))
+(typeattributeset exported_ffs_prop_30_0 (exported_ffs_prop ffs_config_prop ffs_control_prop))
 (typeattributeset exported_fingerprint_prop_30_0 (exported_fingerprint_prop fingerprint_prop))
 (typeattributeset exported_overlay_prop_30_0 (exported_overlay_prop))
 (typeattributeset exported_pm_prop_30_0 (exported_pm_prop))
 (typeattributeset exported_radio_prop_30_0 (exported_radio_prop telephony_status_prop))
 (typeattributeset exported_secure_prop_30_0 (exported_secure_prop))
-(typeattributeset exported_system_prop_30_0 (exported_system_prop charger_status_prop))
-(typeattributeset exported_system_prop_30_0 (exported_system_prop bootanim_system_prop))
-
-(typeattributeset exported_system_radio_prop_30_0
-  ( exported_system_radio_prop
-    usb_config_prop
-    usb_control_prop))
+(typeattributeset exported_system_prop_30_0 (bootanim_system_prop charger_status_prop exported_system_prop))
+(typeattributeset exported_system_radio_prop_30_0 (exported_system_radio_prop usb_config_prop usb_control_prop))
 (typeattributeset exported_vold_prop_30_0 (exported_vold_prop vold_status_prop))
 (typeattributeset exported_wifi_prop_30_0 (exported_wifi_prop wifi_hal_prop))
 (typeattributeset external_vibrator_service_30_0 (external_vibrator_service))
@@ -1488,9 +1420,7 @@
 (typeattributeset graphics_device_30_0 (graphics_device))
 (typeattributeset graphicsstats_service_30_0 (graphicsstats_service))
 (typeattributeset gsi_data_file_30_0 (gsi_data_file))
-(typeattributeset gsi_metadata_file_30_0
-  ( gsi_metadata_file
-    gsi_public_metadata_file))
+(typeattributeset gsi_metadata_file_30_0 (gsi_metadata_file gsi_public_metadata_file))
 (typeattributeset gsid_prop_30_0 (gsid_prop))
 (typeattributeset hal_atrace_hwservice_30_0 (hal_atrace_hwservice))
 (typeattributeset hal_audio_hwservice_30_0 (hal_audio_hwservice))
@@ -1818,9 +1748,7 @@
 (typeattributeset print_service_30_0 (print_service))
 (typeattributeset priv_app_30_0 (priv_app))
 (typeattributeset privapp_data_file_30_0 (privapp_data_file))
-(typeattributeset proc_30_0
-  ( proc
-    proc_bootconfig))
+(typeattributeset proc_30_0 (proc proc_bootconfig))
 (typeattributeset proc_abi_30_0 (proc_abi))
 (typeattributeset proc_asound_30_0 (proc_asound))
 (typeattributeset proc_bluetooth_writable_30_0 (proc_bluetooth_writable))
@@ -2011,8 +1939,7 @@
 (typeattributeset surfaceflinger_service_30_0 (surfaceflinger_service))
 (typeattributeset surfaceflinger_tmpfs_30_0 (surfaceflinger_tmpfs))
 (typeattributeset swap_block_device_30_0 (swap_block_device))
-(typeattributeset sysfs_30_0 (sysfs sysfs_fs_incfs_features))
-(typeattributeset sysfs_30_0 (sysfs sysfs_fs_incfs_metrics))
+(typeattributeset sysfs_30_0 (sysfs sysfs_fs_incfs_features sysfs_fs_incfs_metrics))
 (typeattributeset sysfs_android_usb_30_0 (sysfs_android_usb))
 (typeattributeset sysfs_batteryinfo_30_0 (sysfs_batteryinfo))
 (typeattributeset sysfs_bluetooth_writable_30_0 (sysfs_bluetooth_writable))
@@ -2167,10 +2094,7 @@
 (typeattributeset usbd_exec_30_0 (usbd_exec))
 (typeattributeset usbfs_30_0 (usbfs))
 (typeattributeset use_memfd_prop_30_0 (use_memfd_prop))
-(typeattributeset user_profile_data_file_30_0
-  ( user_profile_data_file
-    user_profile_root_file
-))
+(typeattributeset user_profile_data_file_30_0 (user_profile_data_file user_profile_root_file))
 (typeattributeset user_service_30_0 (user_service))
 (typeattributeset userdata_block_device_30_0 (userdata_block_device))
 (typeattributeset usermodehelper_30_0 (usermodehelper))
@@ -2197,9 +2121,7 @@
 (typeattributeset vendor_misc_writer_30_0 (vendor_misc_writer))
 (typeattributeset vendor_misc_writer_exec_30_0 (vendor_misc_writer_exec))
 (typeattributeset vendor_overlay_file_30_0 (vendor_overlay_file))
-(typeattributeset vendor_public_lib_file_30_0
-    ( vendor_public_framework_file
-      vendor_public_lib_file))
+(typeattributeset vendor_public_lib_file_30_0 (vendor_public_framework_file vendor_public_lib_file))
 (typeattributeset vendor_security_patch_level_prop_30_0 (vendor_security_patch_level_prop))
 (typeattributeset vendor_shell_30_0 (vendor_shell))
 (typeattributeset vendor_shell_exec_30_0 (vendor_shell_exec))
