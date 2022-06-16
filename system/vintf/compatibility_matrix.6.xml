@@ -589,7 +589,7 @@
         <version>1-2</version>
         <interface>
             <name>IVibrator</name>
-            <instance>vibratorfeature</instance>
+            <instance>default</instance>
         </interface>
     </hal>
     <hal format="aidl" optional="true">
@@ -768,6 +768,10 @@
         <config>
             <key>CONFIG_CRYPTO_HMAC</key>
             <value type="tristate">y</value>
+        </config>
+        <config>
+            <key>CONFIG_CRYPTO_MD4</key>
+            <value type="tristate">n</value>
         </config>
         <config>
             <key>CONFIG_CRYPTO_MD5</key>
@@ -1942,6 +1946,10 @@
         <config>
             <key>CONFIG_CRYPTO_HMAC</key>
             <value type="tristate">y</value>
+        </config>
+        <config>
+            <key>CONFIG_CRYPTO_MD4</key>
+            <value type="tristate">n</value>
         </config>
         <config>
             <key>CONFIG_CRYPTO_MD5</key>
@@ -3140,6 +3148,10 @@
         <config>
             <key>CONFIG_CRYPTO_HMAC</key>
             <value type="tristate">y</value>
+        </config>
+        <config>
+            <key>CONFIG_CRYPTO_MD4</key>
+            <value type="tristate">n</value>
         </config>
         <config>
             <key>CONFIG_CRYPTO_MD5</key>

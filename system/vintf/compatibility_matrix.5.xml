@@ -164,14 +164,6 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>android.hardware.configstore</name>
-        <version>1.1</version>
-        <interface>
-            <name>ISurfaceFlingerConfigs</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
         <name>android.hardware.confirmationui</name>
         <version>1.0</version>
         <interface>
@@ -671,6 +663,10 @@
         <config>
             <key>CONFIG_CRYPTO_HMAC</key>
             <value type="tristate">y</value>
+        </config>
+        <config>
+            <key>CONFIG_CRYPTO_MD4</key>
+            <value type="tristate">n</value>
         </config>
         <config>
             <key>CONFIG_CRYPTO_MD5</key>
@@ -1815,6 +1811,10 @@
             <value type="tristate">y</value>
         </config>
         <config>
+            <key>CONFIG_CRYPTO_MD4</key>
+            <value type="tristate">n</value>
+        </config>
+        <config>
             <key>CONFIG_CRYPTO_MD5</key>
             <value type="tristate">y</value>
         </config>
@@ -2913,6 +2913,10 @@
             <value type="tristate">y</value>
         </config>
         <config>
+            <key>CONFIG_CFI_CLANG</key>
+            <value type="tristate">y</value>
+        </config>
+        <config>
             <key>CONFIG_CGROUPS</key>
             <value type="tristate">y</value>
         </config>
@@ -2955,6 +2959,10 @@
         <config>
             <key>CONFIG_CRYPTO_HMAC</key>
             <value type="tristate">y</value>
+        </config>
+        <config>
+            <key>CONFIG_CRYPTO_MD4</key>
+            <value type="tristate">n</value>
         </config>
         <config>
             <key>CONFIG_CRYPTO_MD5</key>
@@ -3242,6 +3250,10 @@
         </config>
         <config>
             <key>CONFIG_L2TP</key>
+            <value type="tristate">y</value>
+        </config>
+        <config>
+            <key>CONFIG_LTO_CLANG</key>
             <value type="tristate">y</value>
         </config>
         <config>
@@ -3885,10 +3897,6 @@
             <value type="tristate">y</value>
         </config>
         <config>
-            <key>CONFIG_CFI_CLANG</key>
-            <value type="tristate">y</value>
-        </config>
-        <config>
             <key>CONFIG_CP15_BARRIER_EMULATION</key>
             <value type="tristate">y</value>
         </config>
@@ -3930,18 +3938,6 @@
         </config>
         <config>
             <key>CONFIG_BPF_JIT_ALWAYS_ON</key>
-            <value type="tristate">y</value>
-        </config>
-    </kernel>
-    <kernel version="5.4.61" level="5">
-        <conditions>
-            <config>
-                <key>CONFIG_X86_64</key>
-                <value type="tristate">y</value>
-            </config>
-        </conditions>
-        <config>
-            <key>CONFIG_CFI_CLANG</key>
             <value type="tristate">y</value>
         </config>
     </kernel>
