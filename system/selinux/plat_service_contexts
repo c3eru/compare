@@ -309,5 +309,9 @@ wifiaware                                 u:object_r:wifiaware_service:s0
 wifirtt                                   u:object_r:rttmanager_service:s0
 window                                    u:object_r:window_service:s0
 *                                         u:object_r:default_android_service:s0
-popupcamera                               u:object_r:popupcamera:s0
 miui.radio.extphone                       u:object_r:radio_service:s0
+# add for mi_nfc
+mi_nfc                                    u:object_r:mi_nfc_service:s0
+#nfc for selinux
+nfc_settings      u:object_r:nfc_service:s0
+nfc.st_ext        u:object_r:nfc_service:s0
