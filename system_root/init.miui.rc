@@ -15,7 +15,6 @@ import /init.miui.google_revenue_share_jp_kd.rc
 import /init.miui.google_revenue_share_fr_sfr.rc
 import /init.miui.google_revenue_share_za_mt.rc
 import /init.miui.google_revenue_share_fr_by.rc
-import /init.miui.google_revenue_share_uk_ee.rc
 import /init.miui.cust.rc
 import /init.miui.opconfig.rc
 import /init.miui.opcust.rc
@@ -52,16 +51,6 @@ on late-init
     chmod 0664 /dev/cpuset/vr/cpus
     chmod 0664 /dev/cpuset/vr/tasks
     chmod 0664 /dev/cpuset/top-app/boost/tasks
-
-    mkdir /dev/cpuset/background/untrustedapp
-    copy /dev/cpuset/cpus /dev/cpuset/background/untrustedapp/cpus
-    copy /dev/cpuset/mems /dev/cpuset/background/untrustedapp/mems
-    write /dev/cpuset/background/untrustedapp/cpus 0-2
-    chown system system /dev/cpuset/background/untrustedapp
-    chown system system /dev/cpuset/background/untrustedapp/tasks
-    chown root system /dev/cpuset/background/untrustedapp/cpus
-    chmod 0664 /dev/cpuset/background/untrustedapp/cpus
-    chmod 0664 /dev/cpuset/background/untrustedapp/tasks
 
 on late-init
     # put some heavy-load thread into this cpuset for performance
@@ -102,13 +91,6 @@ on post-fs-data
     restorecon /sys/kernel/debug/msm_subsys/modem
     chmod 0777 /data/system/migt
     chmod 0777 /data/system/migt/migt
-
-# migard
-on post-fs-data
-    mkdir /data/system/migard 0755 system system
-    mkdir /data/system/migard/game_trace 0755 system system
-    restorecon_recursive /data/system/migard
-    restorecon_recursive /data/system/migard/game_trace
 
 on post-fs-data
     chown system system /sys/hwconf
@@ -224,18 +206,6 @@ on post-fs-data
     chown theme theme /data/system/theme_magic/ringtones
     chmod 0775 /data/system/theme_magic/ringtones
     restorecon /data/system/theme_magic/ringtones
-    mkdir /data/system/fonts/ 0775 theme theme
-    chown theme theme /data/system/fonts/
-    chmod 0775 /data/system/fonts/
-    restorecon /data/system/fonts/
-    mkdir /data/system/fonts/theme_webview/ 0775 theme theme
-    chown root root /data/system/fonts/theme_webview/
-    chmod 0777 /data/system/fonts/theme_webview/
-    restorecon /data/system/fonts/theme_webview/
-    copy /system/fonts/MiSansVF.ttf /data/system/fonts/theme_webview/Roboto-Regular.ttf
-    copy /data/system/theme/fonts/Roboto-Regular.ttf /data/system/fonts/theme_webview/Roboto-Regular.ttf
-    chown theme theme /data/system/fonts/theme_webview/Roboto-Regular.ttf
-    chmod 0644 /data/system/fonts/theme_webview/Roboto-Regular.ttf
 
 # For theme
 service update-theme-uid /system/bin/update_theme_files_uid.sh ${ro.product.first_api_level}
@@ -315,6 +285,14 @@ on boot
     # reclaim
     chown system system /sys/kernel/mi_reclaim/event
 
+    # cpu bandwidth
+    mkdir /dev/cpuctl/background
+    chown system system /dev/cpuctl/background/tasks
+    chmod 0666 /dev/cpuctl/background/tasks
+    write /dev/cpuctl/background/cpu.shares 384
+    write /dev/cpuctl/background/cpu.rt_period_us 1000000
+    write /dev/cpuctl/background/cpu.rt_runtime_us 400000
+
     chown root system /sys/module/millet_core/parameters/millet_freeze_switch
 
 on property:persist.sys.miui_bg_binder=true
@@ -359,32 +337,3 @@ service copy_bugreport_file /system/bin/sh /system/bin/copy_bugreport_file.sh ${
     disabled
     seclabel u:r:shell:s0
 #-MI ADD
-
-# SNO prop
-on property:ro.vendor.oem.sno=*
-    setprop ro.ril.oem.sno ${ro.vendor.oem.sno}
-
-on property:ro.vendor.oem.psno=*
-    setprop ro.ril.oem.psno ${ro.vendor.oem.psno}
-
-#IMEI prop
-on property:persist.vendor.radio.imei=*
-    setprop persist.radio.imei ${persist.vendor.radio.imei}
-    setprop persist.radio.imei1 ${persist.vendor.radio.imei}
-
-on property:persist.vendor.radio.imei2=*
-    setprop persist.radio.imei2 ${persist.vendor.radio.imei2}
-
-on property:ro.vendor.oem.imei=*
-    setprop ro.ril.oem.imei ${ro.vendor.oem.imei}
-    setprop ro.ril.oem.imei1 ${ro.vendor.oem.imei}
-
-on property:ro.vendor.oem.imei2=*
-    setprop ro.ril.oem.imei2 ${ro.vendor.oem.imei2}
-
-#MEID prop
-on property:persist.vendor.radio.meid=*
-    setprop persist.radio.meid ${persist.vendor.radio.meid}
-
-on property:ro.vendor.oem.meid=*
-    setprop ro.ril.oem.meid ${ro.vendor.oem.meid}
