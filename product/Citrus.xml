@@ -74,6 +74,8 @@
     <bool name="support_headset">true</bool>
     <!--whether the device supports nvdia wifi display-->
     <bool name="support_nvdia_wifi_display">false</bool>
+    <!-- whether support miplay privacy cast(wifi display)-->
+    <bool name="support_miplay_cast_privacy">true</bool>
     <!--whether the device supports eap sim-->
     <bool name="support_eap_sim">true</bool>
     <!--whether the device supports screen optimize-->
@@ -198,16 +200,14 @@
     <bool name="support_gesture_wakeup">true</bool>
     <!-- whether support always on -->
     <bool name="support_aod">false</bool>
-    <bool name="support_aod_notification_animate">false</bool>
-    <bool name="aod_support_keycode_goto_dismiss">true</bool>
-    <!-- Whether support partial screenshot -->
-    <bool name="is_support_partial_screenshot">true</bool>
     <!-- whether support edge handgrip -->
     <bool name="support_edge_handgrip">false</bool>
     <!-- whether the device app permission detail show in provision-->
     <bool name="support_provision_app_permission">true</bool>
     <!--whether support pre-installed application-->
     <bool name="support_pre_installed_application">true</bool>
+    <!--wheater support validate device when syste upadte -->
+    <bool name="support_ota_validate">true</bool>
     <!--whether show basic info items-->
     <bool name="support_show_basic_items">true</bool>
     <!--whether show my device-->
@@ -216,6 +216,8 @@
     <bool name="support_round_corner">true</bool>
     <!--wheater support show credentials-->
     <bool name="support_credentials">true</bool>
+    <!--whether support main show XiaoAi-->
+    <bool name="support_main_xiaoai">true</bool>
     <!--battery capacity typ of the device-->
     <string name="battery_capacity_typ">6000</string>
     <!--the vendor feature, it's value may be qcom,mediatek,leadcore or nvidia-->
@@ -262,7 +264,7 @@
     </string-array>
     <bool name="support_tap_fingerprint_sensor_to_home">false</bool>
     <!-- finger for alipay. default do not need config. -->
-    <string name="finger_alipay_ifaa_model">Xiaomi-citrus</string>
+    <string name="finger_alipay_ifaa_model">Xiaomi-lime</string>
     <!-- type of soter finger pay, config by owner of soter -->
     <integer name="type_soter_finger_pay">2</integer>
     <!-- finger record, config by owner -->
@@ -319,6 +321,8 @@
     <bool name="support_new_silentmode">true</bool>
     <!-- whether CN hardware can flash Global rom -->
     <bool name="enable_flash_global">true</bool>
+    <!-- Support Sign Verify In Cust Partition-->
+    <bool name="support_sign_verify_in_cust">true</bool>
     <!--Add for the system data-app which could uninstall by user-->
     <string-array name="system_data_packagename_list">
         <item>com.xiaomi.pass</item>
@@ -428,18 +432,24 @@
     <bool name="support_ar_core">true</bool>
     <!-- whether support_screen_on_delayed -->
     <bool name="support_screen_on_delayed">true</bool>
+    <!--These region support face unlock-->
+    <string-array name="support_face_unlock_region_dom">
+    <item>CN</item>
+    </string-array>
+    <!--These region support face unlock-->
+    <string-array name="support_face_unlock_region_global">
+    <item>ALL</item>
+    </string-array>
+    <!-- whether support multi face input -->
+    <bool name="support_multi_face_input_global">true</bool>
+    <!-- whether support multi face input -->
+    <bool name="support_multi_face_input">true</bool>
     <!-- whether support hangup while screen turnning off -->
     <bool name="support_hangup_while_screen_off">true</bool>
     <!-- device head sar value -->
     <float name="device_head_sar">0.868</float>
     <!-- device body sar value -->
     <float name="device_body_sar">0.865</float>
-    <!-- whether support multi face input -->
-    <bool name="support_multi_face_input_global">true</bool>
-    <!--These region support face unlock-->
-    <string-array name="support_face_unlock_region_global">
-    <item>ALL</item>
-    </string-array>
     <!-- whether support paper eyecare-->
     <bool name="support_paper_eyecare">false</bool>
     <!-- default color temp for paper eyecare -->
