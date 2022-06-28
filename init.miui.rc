@@ -151,11 +151,6 @@ on post-fs-data
     restorecon_recursive /sys/kernel/debug/kperfevents
     restorecon /sys/kernel/debug/extfrag/extfrag_index
 
-# secureboot
-service setlockstate /sbin/setlockstate
-    class core
-    oneshot
-    seclabel u:r:vold:s0
 
 service shelld /system/xbin/shelld
     class main
@@ -279,8 +274,8 @@ service mqsasd /system/xbin/mqsasd daemon
 
 on post-fs-data
     mkdir /data/mqsas 0775 system system
-    mkdir /data/miuilog 0775 system system
-    mkdir /data/miuilog/stability 0775 system system
+    mkdir /data/log 0775 system system
+    mkdir /data/log/stability 0775 system system
     mkdir /data/system/miuilog 0775 system system
     mkdir /data/system/miuiofflinedb 0775 system system
 
@@ -409,10 +404,3 @@ on property:persist.vendor.radio.meid=*
 
 on property:ro.vendor.oem.meid=*
     setprop ro.ril.oem.meid ${ro.vendor.oem.meid}
-
-# SNO prop on android S 
-on property:ro.vendor.ril.oem.sno=*
-    setprop ro.ril.oem.sno ${ro.vendor.ril.oem.sno}
-    
-on property:ro.vendor.ril.oem.psno=*
-    setprop ro.ril.oem.psno ${ro.vendor.ril.oem.psno}
