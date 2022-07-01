@@ -59,6 +59,12 @@
 				systemui:MiuiAmPmStyle="normal"
 				systemui:MiuiClockMode="time"/>
 
+			<ViewStub
+				android:id="@id/pad_clock"
+				android:layout="@layout/pad_clock"
+				android:layout_width="wrap_content"
+				android:layout_height="fill_parent"/>
+
 			<com.android.systemui.statusbar.views.NetworkSpeedSplitter
 				android:textAppearance="@style/TextAppearance.StatusBar.Clock"
 				android:gravity="start|center"
