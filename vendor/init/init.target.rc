@@ -76,8 +76,9 @@ on post-fs-data
     chmod 0666 /sys/module/migt/parameters/mi_viptask
     restorecon /sys/module/migt/parameters/mi_viptask
 
+#xiong porting
 # jiangxueqin To create thermal and config directories, you must first create thermal and then create config
-    mkdir /data/vendor/.tp/ 0775 system system
+#    mkdir /data/vendor/.tp/ 0775 system system
     mkdir /data/vendor/thermal 0771 root system
     mkdir /data/vendor/thermal/config 0771 root system
     mkdir /data/vendor/mac_addr 0771 system system
@@ -94,8 +95,10 @@ on boot
     chown system system /sys/kernel/hbtp/display_pwr
     start rmt_storage
     start rfs_access
-#jiangxueqin To realize the communication between framework and thermal, we need to implement sys node in kernel
+
+#xiong jiangxueqin To realize the communication between framework and thermal, we need to implement sys node in kernel
    chown system system /sys/class/thermal/thermal_message/sconfig
+
 #USB controller configuration
     setprop vendor.usb.rndis.func.name "gsi"
     setprop vendor.usb.rmnet.func.name "gsi"
@@ -128,7 +131,6 @@ on boot
     
     chown system system /dev/qseecom
     chmod 0666 /dev/qseecom
-
     #display
     chmod 0666 /sys/devices/platform/soc/5e00000.qcom,mdss_mdp/backlight/panel0-backlight/brightness
     chmod 0666 /sys/devices/platform/soc/soc:qcom,dsi-display-primary/dsi_display_cabc
@@ -178,6 +180,9 @@ on boot
     chmod 0777 /mnt/vendor/persist/camera/rear_dc_cal_wd.bin
     chmod 0777 /mnt/vendor/persist/camera/mi_calib_2k_output.bin
 
+# We want all cores for NFC
+    chmod 0666 /dev/st21nfc
+    chown nfc nfc /dev/st21nfc
 
 #Load WLAN driver
     insmod /vendor/lib/modules/qca_cld3_wlan.ko
@@ -192,7 +197,6 @@ on charger
     start vendor.power_off_alarm
     setprop vendor.usb.controller 4e00000.dwc3
     setprop sys.usb.configfs 1
-
 #jiangxueqin start mi_thermald
     start mi_thermald
     service mi_thermald /system/vendor/bin/mi_thermald
@@ -231,6 +235,7 @@ service audioshell_service /vendor/bin/audioshell_service
 
 on property:ro.vendor.miui.region=*
     start audioshell_service
+
 #add display by hanwenhao
 service openad /system/vendor/bin/displayf_bin s 1
     user root
@@ -364,7 +369,6 @@ service hwdiag system/bin/hwdiag
     seclabel u:r:diag_test:s0
 ## add for ap diag end
 
-
 # dual bokeh
 on property:vendor.camera.bokeh.disable=1
     setprop persist.vendor.camera.bokeh.preview 1
@@ -426,10 +430,6 @@ service dcvs-sh /vendor/bin/init.qti.dcvs.sh
 on property:vendor.dcvs.prop=1
    start dcvs-sh
 
-########### FTM end ##########
-########### FTM end ##########
-########### FTM end ##########
-
 service panel_color /vendor/bin/panelcolor_bin
     class main
     user root
@@ -439,9 +439,7 @@ service panel_color /vendor/bin/panelcolor_bin
 on property:sys.boot_completed=1
     start panel_color
 
-service checknv /system/bin/checknv
-    class main
-    user root
-    group root system
-    oneshot
-    seclabel u:r:checknv:s0
+########### FTM end ##########
+########### FTM end ##########
+########### FTM end ##########
+
