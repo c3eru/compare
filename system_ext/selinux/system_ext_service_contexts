@@ -57,8 +57,6 @@ MiFluencyService          u:object_r:mi_fluency_service:s0
 
 magicwindow           u:object_r:magicwindow_service:s0
 
-magicpoint           u:object_r:magicpoint_service:s0
-
 camera_covered_service           u:object_r:camera_covered_service:s0
 
 shoulderkey          u:object_r:shoulderkey_service:s0
@@ -78,7 +76,6 @@ miui_embedding_window    u:object_r:miui_embedding_window_service:s0
 
 miui.radio.extphone    u:object_r:radio_service:s0
 
-misight u:object_r:misight_service:s0
 #line 1 "device/qcom/sepolicy/generic/private/service_contexts"
 # Copyright (c) 2018-2019, The Linux Foundation. All rights reserved.
 #

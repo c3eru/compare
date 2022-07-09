@@ -25,7 +25,6 @@
 /data/extm(/.*)?      u:object_r:extm_data_file:s0
 /sys/hwconf(/.*)?        u:object_r:hwconf_data_file:s0
 /data/mqsas(/.*)?      u:object_r:mqsas_data_file:s0
-/data/miuilog(/.*)?     u:object_r:data_log_file:s0
 /d/msm_subsys(/.*)?                    u:object_r:debugfs_subsys:s0
 /data/apk-tmp(/.*)?      u:object_r:temp_apk_data_file:s0
 /data/miui/pai(/.*)?      u:object_r:miui_pai_file:s0
@@ -46,11 +45,9 @@
 /data/system/millet(/.*)?   u:object_r:millet_data:s0
 /data/system/migard(/.*)?   u:object_r:migard_data_file:s0
 /dev/socket/qdma_app(/.*)?                      u:object_r:vendor_qcc_app_socket:s0
-/data/miuilog/misight(/.*)?     u:object_r:data_log_misight_file:s0
 /data/system/whetstone(/.*)?   u:object_r:whetstone_data_file:s0
 /sys/kernel/debug/f2fs(/.*)?          u:object_r:debugfs_f2fs:s0
 /sys/kernel/mi_reclaim(/.*)? u:object_r:sysfs_reclaim:s0
-/data/miuilog/stability(/.*)?      u:object_r:data_log_stability_file:s0
 /sys/module/turbo_sched(/.*)?    u:object_r:sysfs_migt:s0
 /sys/kernel/cam_reclaim(/.*)? u:object_r:sysfs_camreclaim:s0
 /data/system/nativedebug(/.*)?         u:object_r:miui_native_file:s0
@@ -85,7 +82,6 @@
 /system/bin/iwpriv                              u:object_r:hqmdlog_exec:s0
 /system/xbin/shelld     u:object_r:shelld_exec:s0
 /system/xbin/mqsasd     u:object_r:mqsasd_exec:s0
-/system/bin/misight  u:object_r:misight_exec:s0
 /dev/socket/seempdw                             u:object_r:vendor_seempdw_socket:s0
 /dev/xiaomi_wsevents     u:object_r:mcd_device:s0
 /dev/xiaomi/wsevents     u:object_r:mcd_device:s0
