@@ -58,6 +58,9 @@
     <spn numeric="51011" alpha="XL" short="XL" />
     <spn numeric="51021" alpha="INDOSAT" short="INDOSAT" />
 
+    <!-- Providers in Philippines -->
+    <spn numeric="51566" alpha="DITO" short="DITO" />
+
     <!-- Virtual Providers in Belgium -->
     <spn numeric="20601" condition="alpha;imsi:20601889xxxxxxx" alpha="Telenet" short="Telenet" mvno="true"/>
     <spn numeric="20601" condition="imsi:206018017000000~206018026999999" alpha="Virgin" short="Virgin" mvno="true"/>

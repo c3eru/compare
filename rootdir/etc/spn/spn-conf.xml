@@ -740,7 +740,7 @@
     <spnOverride numeric="43235" spn="MTN Irancell"/>
     <spnOverride numeric="43404" spn="Beeline UZ"/>
     <spnOverride numeric="43405" spn="UZB Ucell"/>
-    <spnOverride numeric="43407" spn="UMS-UZB"/>
+    <spnOverride numeric="43407" spn="MOBIUZ"/>
     <spnOverride numeric="43408" spn="UzMobile"/>
     <spnOverride numeric="43601" spn="TCELL"/>
     <spnOverride numeric="43602" spn="TCELL"/>

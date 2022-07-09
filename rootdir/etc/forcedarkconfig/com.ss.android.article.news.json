@@ -296,6 +296,60 @@
               "index": -1
             }
           ]
+        },
+        {
+          "forceDark": false,
+          "viewName": "com.ss.android.image",
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.bytedance.bytewebview.nativerender",
+              "index": -1
+            },
+            {
+              "parent": 3,
+              "viewName": "com.ss.android.detail.feature.detail.view.v2.DetailScrollView",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "com.bytedance.bytewebview.nativerender",
+          "forceDark": false,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.bytedance.bytewebview.nativerender",
+              "index": -1
+            },
+            {
+              "parent": 2,
+              "viewName": "com.ss.android.detail.feature.detail.view.v2.DetailScrollView",
+              "index": -1
+            }
+          ]
+        },
+        {
+          "viewName": "com.ss.android.detail.feature.detail.view.MyWebView",
+          "forceDark": true,
+          "usage": 1,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.bytedance.bytewebview.nativerender",
+              "index": -1
+            },
+            {
+              "parent": 1,
+              "viewName": "com.ss.android.detail.feature.detail.view.v2.DetailScrollView",
+              "index": -1
+            },
+            {
+              "parent": 7,
+              "viewName": "com.ss.android.common.ui.view.SwipeBackLayout",
+              "index": -1
+            }
+          ]
         }
       ]
     },

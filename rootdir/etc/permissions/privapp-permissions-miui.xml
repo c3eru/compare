@@ -851,6 +851,7 @@ applications that come with the miui
         <permission name="android.permission.MANAGE_ACTIVITY_STACKS" />
         <permission name="android.permission.INJECT_EVENTS" />
         <permission name="android.permission.INTERACT_ACROSS_USERS" />
+        <permission name="android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND" />
     </privapp-permissions>
 
     <privapp-permissions package="com.miui.screenshot">

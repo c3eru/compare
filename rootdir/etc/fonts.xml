@@ -26,22 +26,22 @@
     <family name="sans-serif">
     <!-- # MIUI Edit Start -->
     <!-- For WebView font -->
-        <font weight="100" style="normal" postScriptName="MiSansVF">MiSansVF_Overlay.ttf
+        <font weight="100" style="normal" postScriptName="MiSansVF">MiSansVF.ttf
             <axis tag="wght" stylevalue="150"/>
         </font>
-        <font weight="300" style="normal" postScriptName="MiSansVF">MiSansVF_Overlay.ttf
+        <font weight="300" style="normal" postScriptName="MiSansVF">MiSansVF.ttf
             <axis tag="wght" stylevalue="250"/>
         </font>
-        <font weight="400" style="normal" postScriptName="MiSansVF">MiSansVF_Overlay.ttf
+        <font weight="400" style="normal" postScriptName="MiSansVF">MiSansVF.ttf
             <axis tag="wght" stylevalue="330"/>
         </font>
-        <font weight="500" style="normal" postScriptName="MiSansVF">MiSansVF_Overlay.ttf
+        <font weight="500" style="normal" postScriptName="MiSansVF">MiSansVF.ttf
             <axis tag="wght" stylevalue="430"/>
         </font>
-        <font weight="900" style="normal" postScriptName="MiSansVF">MiSansVF_Overlay.ttf
+        <font weight="900" style="normal" postScriptName="MiSansVF">MiSansVF.ttf
             <axis tag="wght" stylevalue="570"/>
         </font>
-        <font weight="700" style="normal" postScriptName="MiSansVF">MiSansVF_Overlay.ttf
+        <font weight="700" style="normal" postScriptName="MiSansVF">MiSansVF.ttf
             <axis tag="wght" stylevalue="500"/>
         </font>
     </family>
@@ -294,134 +294,134 @@
 
     <!-- MIUI fonts begin /-->
     <family name="miui">
-        <font weight="400" style="normal" postScriptName="MiSansVF">MiSansVF_Overlay.ttf
+        <font weight="400" style="normal" postScriptName="MiSansVF">MiSansVF.ttf
             <axis tag="wght" stylevalue="330"/>
         </font>
-        <font weight="700" style="normal" postScriptName="MiSansVF">MiSansVF_Overlay.ttf
+        <font weight="700" style="normal" postScriptName="MiSansVF">MiSansVF.ttf
             <axis tag="wght" stylevalue="430"/>
         </font>
     </family>
 
     <family name="miui-thin">
-        <font weight="400" style="normal" postScriptName="MiSansVF">MiSansVF_Overlay.ttf
+        <font weight="400" style="normal" postScriptName="MiSansVF">MiSansVF.ttf
             <axis tag="wght" stylevalue="150"/>
         </font>
-        <font weight="700" style="normal" postScriptName="MiSansVF">MiSansVF_Overlay.ttf
+        <font weight="700" style="normal" postScriptName="MiSansVF">MiSansVF.ttf
             <axis tag="wght" stylevalue="250"/>
         </font>
     </family>
 
     <family name="miui-light">
-        <font weight="400" style="normal" postScriptName="MiSansVF">MiSansVF_Overlay.ttf
+        <font weight="400" style="normal" postScriptName="MiSansVF">MiSansVF.ttf
             <axis tag="wght" stylevalue="250"/>
         </font>
-        <font weight="700" style="normal" postScriptName="MiSansVF">MiSansVF_Overlay.ttf
+        <font weight="700" style="normal" postScriptName="MiSansVF">MiSansVF.ttf
             <axis tag="wght" stylevalue="330"/>
         </font>
     </family>
 
     <family name="miui-regular">
-        <font weight="400" style="normal" postScriptName="MiSansVF">MiSansVF_Overlay.ttf
+        <font weight="400" style="normal" postScriptName="MiSansVF">MiSansVF.ttf
             <axis tag="wght" stylevalue="330"/>
         </font>
-        <font weight="700" style="normal" postScriptName="MiSansVF">MiSansVF_Overlay.ttf
+        <font weight="700" style="normal" postScriptName="MiSansVF">MiSansVF.ttf
             <axis tag="wght" stylevalue="430"/>
         </font>
     </family>
 
     <family name="miui-bold">
-        <font weight="400" style="normal" postScriptName="MiSansVF">MiSansVF_Overlay.ttf
+        <font weight="400" style="normal" postScriptName="MiSansVF">MiSansVF.ttf
             <axis tag="wght" stylevalue="430"/>
         </font>
-        <font weight="700" style="normal" postScriptName="MiSansVF">MiSansVF_Overlay.ttf
+        <font weight="700" style="normal" postScriptName="MiSansVF">MiSansVF.ttf
             <axis tag="wght" stylevalue="500"/>
         </font>
     </family>
 
     <family name="mipro">
-        <font weight="400" style="normal" postScriptName="MiSansVF">MiSansVF_Overlay.ttf
+        <font weight="400" style="normal" postScriptName="MiSansVF">MiSansVF.ttf
             <axis tag="wght" stylevalue="330"/>
         </font>
-        <font weight="700" style="normal" postScriptName="MiSansVF">MiSansVF_Overlay.ttf
+        <font weight="700" style="normal" postScriptName="MiSansVF">MiSansVF.ttf
             <axis tag="wght" stylevalue="430"/>
         </font>
     </family>
 
     <family name="mipro-thin">
-        <font weight="400" style="normal" postScriptName="MiSansVF">MiSansVF_Overlay.ttf
+        <font weight="400" style="normal" postScriptName="MiSansVF">MiSansVF.ttf
             <axis tag="wght" stylevalue="150"/>
         </font>
-        <font weight="700" style="normal" postScriptName="MiSansVF">MiSansVF_Overlay.ttf
+        <font weight="700" style="normal" postScriptName="MiSansVF">MiSansVF.ttf
             <axis tag="wght" stylevalue="200"/>
         </font>
     </family>
 
     <family name="mipro-extralight">
-        <font weight="400" style="normal" postScriptName="MiSansVF">MiSansVF_Overlay.ttf
+        <font weight="400" style="normal" postScriptName="MiSansVF">MiSansVF.ttf
             <axis tag="wght" stylevalue="200"/>
         </font>
-        <font weight="700" style="normal" postScriptName="MiSansVF">MiSansVF_Overlay.ttf
+        <font weight="700" style="normal" postScriptName="MiSansVF">MiSansVF.ttf
             <axis tag="wght" stylevalue="250"/>
         </font>
     </family>
     <family name="mipro-light">
-        <font weight="400" style="normal" postScriptName="MiSansVF">MiSansVF_Overlay.ttf
+        <font weight="400" style="normal" postScriptName="MiSansVF">MiSansVF.ttf
             <axis tag="wght" stylevalue="250"/>
         </font>
-        <font weight="700" style="normal" postScriptName="MiSansVF">MiSansVF_Overlay.ttf
+        <font weight="700" style="normal" postScriptName="MiSansVF">MiSansVF.ttf
             <axis tag="wght" stylevalue="305"/>
         </font>
     </family>
     <family name="mipro-normal">
-        <font weight="400" style="normal" postScriptName="MiSansVF">MiSansVF_Overlay.ttf
+        <font weight="400" style="normal" postScriptName="MiSansVF">MiSansVF.ttf
             <axis tag="wght" stylevalue="305"/>
         </font>
-        <font weight="700" style="normal" postScriptName="MiSansVF">MiSansVF_Overlay.ttf
+        <font weight="700" style="normal" postScriptName="MiSansVF">MiSansVF.ttf
             <axis tag="wght" stylevalue="330"/>
         </font>
     </family>
     <family name="mipro-regular">
-        <font weight="400" style="normal" postScriptName="MiSansVF">MiSansVF_Overlay.ttf
+        <font weight="400" style="normal" postScriptName="MiSansVF">MiSansVF.ttf
             <axis tag="wght" stylevalue="330"/>
         </font>
-        <font weight="700" style="normal" postScriptName="MiSansVF">MiSansVF_Overlay.ttf
+        <font weight="700" style="normal" postScriptName="MiSansVF">MiSansVF.ttf
             <axis tag="wght" stylevalue="430"/>
         </font>
     </family>
     <family name="mipro-medium">
-        <font weight="400" style="normal" postScriptName="MiSansVF">MiSansVF_Overlay.ttf
+        <font weight="400" style="normal" postScriptName="MiSansVF">MiSansVF.ttf
             <axis tag="wght" stylevalue="430"/>
         </font>
-        <font weight="700" style="normal" postScriptName="MiSansVF">MiSansVF_Overlay.ttf
+        <font weight="700" style="normal" postScriptName="MiSansVF">MiSansVF.ttf
             <axis tag="wght" stylevalue="500"/>
         </font>
     </family>
     <family name="mipro-demibold">
-        <font weight="400" style="normal" postScriptName="MiSansVF">MiSansVF_Overlay.ttf
+        <font weight="400" style="normal" postScriptName="MiSansVF">MiSansVF.ttf
             <axis tag="wght" stylevalue="500"/>
         </font>
-        <font weight="700" style="normal" postScriptName="MiSansVF">MiSansVF_Overlay.ttf
+        <font weight="700" style="normal" postScriptName="MiSansVF">MiSansVF.ttf
             <axis tag="wght" stylevalue="570"/>
         </font>
     </family>
     <family name="mipro-semibold">
-        <font weight="400" style="normal" postScriptName="MiSansVF">MiSansVF_Overlay.ttf
+        <font weight="400" style="normal" postScriptName="MiSansVF">MiSansVF.ttf
             <axis tag="wght" stylevalue="570"/>
         </font>
-        <font weight="700" style="normal" postScriptName="MiSansVF">MiSansVF_Overlay.ttf
+        <font weight="700" style="normal" postScriptName="MiSansVF">MiSansVF.ttf
             <axis tag="wght" stylevalue="660"/>
         </font>
     </family>
     <family name="mipro-bold">
-        <font weight="400" style="normal" postScriptName="MiSansVF">MiSansVF_Overlay.ttf
+        <font weight="400" style="normal" postScriptName="MiSansVF">MiSansVF.ttf
             <axis tag="wght" stylevalue="660"/>
         </font>
-        <font weight="700" style="normal" postScriptName="MiSansVF">MiSansVF_Overlay.ttf
+        <font weight="700" style="normal" postScriptName="MiSansVF">MiSansVF.ttf
             <axis tag="wght" stylevalue="700"/>
         </font>
     </family>
     <family name="mipro-heavy">
-        <font weight="400" style="normal" postScriptName="MiSansVF">MiSansVF_Overlay.ttf
+        <font weight="400" style="normal" postScriptName="MiSansVF">MiSansVF.ttf
             <axis tag="wght" stylevalue="700"/>
         </font>
     </family>

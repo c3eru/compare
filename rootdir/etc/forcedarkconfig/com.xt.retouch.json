@@ -56,6 +56,30 @@
               "id": "lynxViewRoot"
             }
           ]
+        },
+        {
+          "viewName": "com.bytedance.lynx.tasm.ui.imageloader",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.lynx.tasm.LynxView",
+              "index": -1
+            },
+            {
+              "parent": 2,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1,
+              "id": "common_lynx_container"
+            },
+            {
+              "parent": 3,
+              "viewName": "android.widget.FrameLayout",
+              "index": -1,
+              "id": "lynxViewRoot"
+            }
+          ]
         }
       ]
     },

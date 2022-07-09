@@ -137,6 +137,18 @@
               "index": -1
             }
           ]
+        },
+        {
+          "viewName": "com.taobao.uikit.extend.feature.view.TUrlImageView",
+          "forceDark": true,
+          "usage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.taobao.android.tbtheme.kit.ThemeFrameLayout",
+              "index": -1
+            }
+          ]
         }
       ]
     },
@@ -222,18 +234,13 @@
       "forceDark": true,
       "forceDarkViewConfigList": [
         {
-          "viewName": "TNodeImageView",
+          "viewName": "com.taobao.tao.flexbox.layoutmanager.view.TNodeImageView",
           "forceDark": true,
-          "usage": 103,
+          "usage": 2,
           "conditions": [
             {
-              "viewName": "FlatViewGroup",
               "parent": 0,
-              "index": -1
-            },
-            {
-              "viewName": "FlatViewGroup",
-              "parent": 2,
+              "viewName": "com.taobao.tao.flexbox.layoutmanager.view.FlatViewGroup",
               "index": -1
             }
           ]

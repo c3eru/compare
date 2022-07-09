@@ -84,6 +84,27 @@
           ]
         }
       ]
+    },
+    {
+      "activityName": "com.light.beauty.mainpage.MainActivity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "com.light.beauty.uiwidget.view.StatusCircleView",
+          "id": "btn_frag_decorate_save",
+          "forceDark": false,
+          "usage": 1,
+          "backgroundUsage": 1,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "android.widget.RelativeLayout",
+              "index": -1,
+              "id": "rl_save"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

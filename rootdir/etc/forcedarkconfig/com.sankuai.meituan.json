@@ -206,7 +206,14 @@
           ]
         },
         {
-          "viewName": "com.sankuai.ptview.view.impl.PTImageViewImpl",
+          "viewName":"PTRelativeLayout",
+          "id":"user_info_container",
+          "forceDark":true,
+          "usage":103,
+          "backgroundUsage":103
+        },
+        {
+          "viewName": "PTImageView",
           "id": "account_vip_background",
           "forceDark": true,
           "usage": 103,
@@ -214,7 +221,7 @@
           "conditions": [
             {
               "parent": 0,
-              "viewName": "com.sankuai.ptview.view.impl.PTFrameLayoutImpl",
+              "viewName": "PTFrameLayout",
               "index": -1
             }
           ]

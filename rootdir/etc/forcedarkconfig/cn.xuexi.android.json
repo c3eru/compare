@@ -37,6 +37,37 @@
     {
       "activityName": "com.alibaba.android.user.contact.activities.MyQrcodeActivity",
       "forceDark": false
+    },
+    {
+      "activityName": "com.alibaba.android.uc.base.navi.window2.Window2Activity",
+      "forceDark": true,
+      "forceDarkViewConfigList": [
+        {
+          "viewName": "com.alibaba.android.uc.business.webmedia.widget.WeMediaAuthorHeaderView",
+          "forceDark": true,
+          "usage": 103,
+          "backgroundUsage": 103,
+          "conditions": [
+            {
+              "parent": 0,
+              "viewName": "com.alibaba.android.uc.business.webmedia.WeMediaAuthorWindow",
+              "index": -1
+            },
+            {
+              "parent": 1,
+              "viewName": "androidx.appcompat.widget.ContentFrameLayout",
+              "index": -1,
+              "id": "content"
+            },
+            {
+              "parent": 2,
+              "viewName": "androidx.appcompat.widget.FitWindowsLinearLayout",
+              "index": -1,
+              "id": "action_bar_root"
+            }
+          ]
+        }
+      ]
     }
   ],
   "forceDarkViewGlobalConfigList": [

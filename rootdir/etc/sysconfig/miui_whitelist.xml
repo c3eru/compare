@@ -30,4 +30,5 @@ platform cert need to be included, as apps signed with the platform cert are exe
   <hidden-api-whitelisted-app package="com.miui.audioeffect" />
   <hidden-api-whitelisted-app package="com.android.calendar" />
   <hidden-api-whitelisted-app package="com.xiaomi.mircs" />
+  <hidden-api-whitelisted-app package="com.android.provision" />
 </config>
